@@ -4,13 +4,13 @@ Ceramassit
 A workflow and documentation suite for ceramic artists
 ------------------------------------------------------
 
-Ceramassist was never intended to be a software title.  It was created as a learning tool to help expedite my knowledge and learning in the art of ceramics. I use ceramassist as part my art practice.  The software runs on web server powered by php5 with the sqlite and curl extensions installed.  There is no authentication or security on the application as it is intended to be used locally.
+Ceramassist was never intended to be a software title.  It was created as a learning tool to help expedite my ceramic knowledge and process. I use ceramassist as part of my art practice.  The software runs on web server powered by php5 with the sqlite and curl extensions installed.  The application has no authentication or security, as it is intended to be used locally.
 
 Feature include
 
-- Sample / Material database, with location maps and sever formula.
+- Sample / Material database, with location maps and seger formula.
 - Document database, ability to link documents to other sections.
-- Forumla Database
+- Formula Database
 - Recipes Database, with groups
 - line, triaxle, quadraxial blend tests
 - Firing database with firing schedule and kiln database

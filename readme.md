@@ -1,4 +1,4 @@
-Ceramassit
+Ceramassist
 ===========
 
 A workflow and documentation suite for ceramic artists

@@ -1,4 +1,4 @@
-Cerramassit
+Ceramassit
 ===========
 
 A workflow and documentation suite for ceramic artists
@@ -15,9 +15,29 @@ Feature include
 - line, triaxle, quadraxial blend tests
 - Firing database with firing schedule and kiln database
 - Ware database, a place to store ware.
-- Distribution, interconnect woo commerce webstore to ware database, manage exhibitions and stock in retailers/galleries
+- Distribution, interconnect wordpress / woo commerce web store to the ware database, manage exhibitions and stock in retailers/galleries
+
+With a yocto thermocouple, http://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-thermocouple you can log your kiln temperature during a firing. 
 
 
+
+
+Libraries used
+
+	javascript
+
+		Jquery
+		Jquery UI
+		Bootstrap 
+		flot
+	
+	php
+	
+		woocomerce-api
+		yocto temperature	
+	
+
+License
 	
 	This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

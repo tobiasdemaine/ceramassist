@@ -1,0 +1,42 @@
+Setup and Install Woocommerce external link ->
+
+WooCommerce > Settings > Api
+
+Under Settings > General Options
+Check the Enable the REST API Box
+
+Under Keys/Apps
+Create a new key
+Copy these down
+
+
+
+Create a Page name Image Upload with Permalink as image-upload
+
+edit the template for a page. 
+In default theme this is content-page.php
+Appearance > Editor > content-page.php
+
+
+
+
+Copy and paste the following into the top of the page it replacing your_woo_consumer_secret with the actual consumer secret key.
+
+
+<code>
+$consumer_secret = "your_woo_consumer_secret";
+if(isset($_POST["key"])){
+	if($_POST["key"] == $consumer_secret){
+		require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+		require_once(ABSPATH . "wp-admin" . '/includes/file.php');
+		require_once(ABSPATH . "wp-admin" . '/includes/media.php');
+
+		$attachment_id = media_handle_upload('file-upload', $post->ID);
+		if($attachment_id != ""){
+			$attachment = get_post( $attachment_id );
+			echo "[file:".$attachment->guid."]";
+		}
+	}
+}
+</code>
+

@@ -84,7 +84,7 @@ if($view->url["add_exhibition"] != "new"){
    </ul>
   	
   	<div id="tabs-1">
-  	<?
+  	<?php
   	 echo $view->get_exhibition_ware_list($exhibition['id']);
   	?>		
   	
@@ -147,7 +147,7 @@ if($view->url["add_exhibition"] != "new"){
 <div style="width:20%;" class="pull-right">
 <table class="table table-striped" width="100%"><thead><tr><th>Folders</th></tr></thead><tr><td>
 	<ul class="catlist" style=" overflow:scroll">
-	<li><a href="javascript:view_ware_cat_contents(0)" id="cat_0" class="catz">Ware</a>	<?
+	<li><a href="javascript:view_ware_cat_contents(0)" id="cat_0" class="catz">Ware</a>	<?php
 	$html = "";
 	$view->get_ware_cat_html_no_edit(0, $html);
 	echo $html;
@@ -235,7 +235,7 @@ if($view->url["add_exhibition"] != "new"){
 </style>
 
 
-<? } ?>
+<?php } ?>
 <script>
 function link_ware_to_db(){
 	ware_id = $('#link_ware_id').val();

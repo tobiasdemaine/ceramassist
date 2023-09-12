@@ -79,21 +79,21 @@
 		<div style="    background-image: linear-gradient(to bottom, #EAE9E9, #F3F3F3); margin-bottom:10px; position:fixed; width:100%; z-index:1000; box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6)" >
 			<div class="container-fluid" >
 			<div class="pull-right btn-group" style="padding-top:5px; ">
-				<? if($view->get_section() == "documents"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
+				<?php if($view->get_section() == "documents"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
 				<a href="?documents=true"  class='btn <?=$btn_info;?> btn-sm'>Documents</a>
-				<? if($view->get_section() == "material"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
+				<?php if($view->get_section() == "material"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
 				<a href="?samples=true"  class='btn <?=$btn_info;?> btn-sm'>Materials</a>
-				<? if($view->get_section() == "formula"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
+				<?php if($view->get_section() == "formula"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
 				<a href="?formula=true"  class='btn <?=$btn_info;?> btn-sm'>Formulae</a>
-				<? if($view->get_section() == "recipes"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
+				<?php if($view->get_section() == "recipes"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
 				<a href="?recipes=true"  class='btn <?=$btn_info;?> btn-sm'>Recipes</a>
-				<? if($view->get_section() == "tests"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
+				<?php if($view->get_section() == "tests"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
 				<a href="?tests=true"  class='btn <?=$btn_info;?> btn-sm'>Tests</a>
-				<? if($view->get_section() == "firings"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
+				<?php if($view->get_section() == "firings"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
         		<a href="?firings=true" class='btn <?=$btn_info;?> btn-sm'>Firings</a>
-        		<? if($view->get_section() == "ware"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
+        		<?php if($view->get_section() == "ware"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
         		<a href="?ware=true" class='btn <?=$btn_info;?> btn-sm'>Ware</a>
-				<? if($view->get_section() == "distribution"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
+				<?php if($view->get_section() == "distribution"){ $btn_info="btn-success";}else{$btn_info="btw-info";} ?>
         		<a href="?distribution=true" class='btn <?=$btn_info;?> btn-sm'>Distribution</a>
         	</div>
 			<a href="?">

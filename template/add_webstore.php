@@ -212,7 +212,7 @@ if($view->url["add_webstore"] != "new"){
     	?>
     	 <li><a href="#tabs-2">Orders</a></li>
     	 <li><a href="#tabs-4">Store Products</a></li>
-    	<?
+    	<?php
     }
     ?>
     <li><a href="#tabs-3">Documents</a></li>
@@ -251,7 +251,7 @@ if($view->url["add_webstore"] != "new"){
   								</select>
   							</td>
   						</tr>
-  						<?
+  						<?php
   					}
   				}
   				if($count==0){
@@ -355,21 +355,21 @@ if($view->url["add_webstore"] != "new"){
   					if($x !== false){
   						?>
   						<option value="unlink">Unlink</option>
-  						<?
+  						<?php
   					}
   					?>
   					<option value="delete">Delete</option>
   				</select>
   				</td>
   			</tr>	
-  			<?
+  			<?php
   		}
   		?>
   		</table>
   		
   		
   		</div>
-    	<?
+    	<?php
     }
     ?>
   	
@@ -409,7 +409,7 @@ if($view->url["add_webstore"] != "new"){
   				<a href="javascript:link_ware_to_woo(<?=$product->id?>)" class="btn">Link</a>
   				</td>
   			</tr>	
-  			<?
+  			<?php
   			}
   		}
   		?>
@@ -601,7 +601,7 @@ if($view->url["add_webstore"] != "new"){
 </style>
 
 
-<? } ?>
+<?php } ?>
 <script>
 function link_ware_to_db(){
 	ware_id = $('#link_ware_id').val();

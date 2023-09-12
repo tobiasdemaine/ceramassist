@@ -1,4 +1,4 @@
-<?
+<?php
 $view->set_section('formula');
 ?><div style="text-align:right;">
 <div style="inline-block; float:left">

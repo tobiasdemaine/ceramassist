@@ -96,7 +96,7 @@ foreach($settings as $setting){
 					?>
 				</ul>
 			</div>
-			<?
+			<?php
 		}
 	
 		foreach($update["info"] as $info){
@@ -106,7 +106,7 @@ foreach($settings as $setting){
 					<?=$info?>
 				</div>
 			</div>
-			<?
+			<?php
 		}
 	}else{
 	

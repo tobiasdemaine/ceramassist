@@ -1,10 +1,8 @@
-Ceramassist
-===========
+# Ceramassist
 
-A workflow and documentation suite for ceramic artists
-------------------------------------------------------
+## A workflow and documentation suite for ceramic artists
 
-Ceramassist was never intended to be a software title.  It was created as a learning tool to help expedite my ceramic knowledge and process. I use ceramassist as part of my art practice.  The software runs on web server powered by php5 with the sqlite and curl extensions installed.  The application has no authentication or security, as it is intended to be used locally.
+Ceramassist was never intended to be a software title. It was created as a learning tool to help expedite my ceramic knowledge and process. I use ceramassist as part of my art practice. The software runs on web server powered by php5 with the sqlite and curl extensions installed. The application has no authentication or security, as it is intended to be used locally.
 
 Feature include
 
@@ -17,32 +15,27 @@ Feature include
 - Ware database, a place to store ware.
 - Distribution, interconnect wordpress / woo commerce web store to the ware database, manage exhibitions and stock in retailers/galleries
 
-With a yocto thermocouple, http://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-thermocouple you can log your kiln temperature during a firing. 
-
-
-
+With a yocto thermocouple, http://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-thermocouple you can log your kiln temperature during a firing.
 
 Libraries used
 
-	javascript
+    javascript
 
-		Jquery
-		Jquery UI
-		Bootstrap 
-		flot
-	
-	php
-	
-		woocomerce-api
-		yocto temperature	
-	
+    	Jquery
+    	Jquery UI
+    	Bootstrap
+    	flot
+
+    php
+
+    	woocomerce-api
+    	yocto temperature
 
 License
-	
-	This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of

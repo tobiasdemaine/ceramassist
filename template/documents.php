@@ -1,4 +1,4 @@
-<?
+<?php
 $view->set_section('documents');
 ?>
 <script>
@@ -115,7 +115,7 @@ list-style: none;
 <div style="width:30%;" class="pull-right">
 <table class="table table-striped" width="100%"><thead><tr><th>Folders</th></tr></thead><tr><td>
 	<ul class="catlist" style=" overflow:scroll">
-	<li><a href="javascript:view_cat_contents(0)" id="cat_0" class="catz">Documents</a>	<?
+	<li><a href="javascript:view_cat_contents(0)" id="cat_0" class="catz">Documents</a>	<?php
 	$html = "";
 	$view->get_document_cat_html(0, $html);
 	echo $html;
@@ -133,7 +133,7 @@ list-style: none;
 	<div>
 		<select id="parent" name="parent" onchange="">
 			<option value="0" selected>/</option>
-			<?
+			<?php
 			$html = "";
 			$view->get_document_cat_options(0, $html, "/");
 			echo $html;
@@ -156,7 +156,7 @@ list-style: none;
 	<div>
 		<select id="parent" onchange="">
 			<option value="0" selected>/</option>
-			<?
+			<?php
 			$html = "";
 			$view->get_document_cat_options(0, $html, "/");
 			echo $html;

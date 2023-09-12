@@ -1,4 +1,4 @@
-<?
+<?php
 $view->set_section('firings');
 if($view->url["firing"]!="new"){
 	$firing = $view->get_firing($view->url["firing"]);
@@ -15,7 +15,7 @@ if($view->url["firing"]!="new"){
 	$title = "Next";
 }
 ?>
-<h1>Firing <? if($view->url["firing"]!="new"){ ?><span style="float:right;" id="temp">
+<h1>Firing <?php if($view->url["firing"]!="new"){ ?><span style="float:right;" id="temp">
 <a href="javascript:clear_firing_data();" style="font-weight:300;" class='btn btn-warning btn-sm'>Clear Firing Data</a>
 &nbsp;&nbsp;&nbsp;
 <div class="btn-group"><a href="javascript:add_test();" class='btn btn-info btn-sm' style="font-weight:300;">Add Tests</a>
@@ -24,7 +24,7 @@ if($view->url["firing"]!="new"){
 &nbsp;&nbsp;
 <div class="btn-group">
 <a href="javascript:add_schedule();" class='btn btn-danger  btn-sm' style="font-weight:300;">Schedule</a>
-<a href="javascript:void(0)" onclick="set_up_pyros();" class='btn btn-danger btn-sm' style="font-weight:300;">Pyro</a></div></span><? } ?></h1>
+<a href="javascript:void(0)" onclick="set_up_pyros();" class='btn btn-danger btn-sm' style="font-weight:300;">Pyro</a></div></span><?php } ?></h1>
 <div style="display:table; width:100%">
 <div style="width:30%; display:table-cell; vertical-align: top; ">
 
@@ -59,7 +59,7 @@ if($view->url["firing"]!="new"){
 			</div><div>
 			<small>Kiln Description</small>
 			<br><?=$kiln["description"]?>
-			</div></div><?
+			</div></div><?php
 		}
 		?>
 </div>
@@ -173,7 +173,7 @@ if($view->url["firing"]!="new"){
 
 
 <div id="data_return"></div>
-<? } ?>
+<?php } ?>
 <script>
 $(function(){
 	$('#thermacouple_setup').dialog({
@@ -447,7 +447,7 @@ function save_firing(){
 	}
 }
 
-	<? if($view->url["firing"]!="new"){ 
+	<?php if($view->url["firing"]!="new"){ 
 		$data = $view->get_firing_data($firing['id']);
 		if(!isset($data['thermo1'])){
 			$thermo1 = "";
@@ -463,7 +463,7 @@ function save_firing(){
 		if($firing["schedule"]!=""){
 			?>
 			get_schedule('<?=$firing["schedule"]?>');
-			<?
+			<?php
 		}
 		?>
 		load_comments_list();
@@ -495,7 +495,7 @@ function save_firing(){
 
 		doPlot("right");
 		$('.kiln_data').hide();$('#kiln_<?=$firing["kiln"]?>').show();
-	<? }?>
+	<?php }?>
 
 	
 	

@@ -29,7 +29,7 @@ foreach($samples as $sample){
 			<div style="padding-top:10px;">
 <select id="allsets" style="" onchange="document.location.href = '?tests=true&data_set='+$(this).val()+'&type='+$('#alltype').val();">
 		<option value="">All</option>
-<?
+<?php
 foreach ($data_sets as $type){
 	$selected = "";
 	if(isset($view->url["data_set"])){
@@ -37,13 +37,13 @@ foreach ($data_sets as $type){
 			$selected = "selected";
 		}
 	}
-	?><option value="<?=$type?>" <?=$selected?>><?=$type?></option><?
+	?><option value="<?=$type?>" <?=$selected?>><?=$type?></option><?php
 }
 ?>
 </select>
 <select id="alltype" style="width:120px;" onchange="document.location.href = '?tests=true&type='+$(this).val()+'&data_set='+$('#allsets').val();">
 		<option value="">All</option>
-<?
+<?php
 foreach ($types as $type){
 	$selected = "";
 	if(isset($view->url["type"])){
@@ -51,7 +51,7 @@ foreach ($types as $type){
 			$selected = "selected";
 		}
 	}
-	?><option value="<?=$type?>" <?=$selected?>><?=$type?></option><?
+	?><option value="<?=$type?>" <?=$selected?>><?=$type?></option><?php
 }
 ?>
 </select>
@@ -117,13 +117,13 @@ foreach ($types as $type){
 	<div>Data Set</div>
 	<div>
 		<select id="data_set">
-			<? 
+			<?php 
 				$samples = $view->get_all_tests();
 				$sets = array();
 				foreach($samples as $_sample){
 					if(!in_array(strtolower($_sample['data_set']), $sets)){
 						array_push($sets, strtolower($_sample['data_set']));
-						?><option value="<?=$_sample["data_set"]?>"><?=$_sample["data_set"]?></option><?
+						?><option value="<?=$_sample["data_set"]?>"><?=$_sample["data_set"]?></option><?php
 					}
 				}
 				?>

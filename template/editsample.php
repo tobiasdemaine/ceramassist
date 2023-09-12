@@ -42,7 +42,7 @@ $types = array();
 foreach($samples as $_sample){
 	if(!in_array(strtolower($_sample['type']), $types)){
 		array_push($types, strtolower($_sample['type']));
-		?><option <?php if(isset($sample["type"])){ if($sample["type"]==$_sample["type"]){ echo 'selected';}} ?> value="<?=$_sample["type"]?>"><?=$_sample["type"]?></option><?
+		?><option <?php if(isset($sample["type"])){ if($sample["type"]==$_sample["type"]){ echo 'selected';}} ?> value="<?=$_sample["type"]?>"><?=$_sample["type"]?></option><?php
 	}
 }
 ?>
@@ -60,7 +60,7 @@ $sets = array();
 foreach($samples as $_sample){
 	if(!in_array(strtolower($_sample['data_set']), $sets)){
 		array_push($sets, strtolower($_sample['data_set']));
-		?><option <?php if(isset($sample["data_set"])){ if($sample["data_set"]==$_sample["data_set"]){ echo 'selected';}} ?> value="<?=$_sample["data_set"]?>"><?=$_sample["data_set"]?></option><?
+		?><option <?php if(isset($sample["data_set"])){ if($sample["data_set"]==$_sample["data_set"]){ echo 'selected';}} ?> value="<?=$_sample["data_set"]?>"><?=$_sample["data_set"]?></option><?php
 	}
 }
 ?>

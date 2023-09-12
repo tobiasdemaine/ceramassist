@@ -1,4 +1,4 @@
-<?
+<?php
 
 $view->set_section('material');
 $samples = $view->get_all_samples();
@@ -50,9 +50,9 @@ foreach($samples as $sample){
 	</select> 
 	<select id="mtype" style="width:120px;">
 		<option value="all">All</option>
-		<?
+		<?php
 		foreach ($types as $type){
-			?><option value="<?=$type?>"><?=$type?></option><?
+			?><option value="<?=$type?>"><?=$type?></option><?php
 		}
 		
 		?>
@@ -72,7 +72,7 @@ foreach($samples as $sample){
 
 <select id="allsets" style="" onchange="document.location.href = '?samples=true&data_set='+$(this).val()+'&type='+$('#alltype').val();">
 		<option value="">All</option>
-<?
+<?php
 foreach ($data_sets as $type){
 	$selected = "";
 	if(isset($view->url["data_set"])){
@@ -80,13 +80,13 @@ foreach ($data_sets as $type){
 			$selected = "selected";
 		}
 	}
-	?><option value="<?=$type?>" <?=$selected?>><?=$type?></option><?
+	?><option value="<?=$type?>" <?=$selected?>><?=$type?></option><?php
 }
 ?>
 </select>
 <select id="alltype" style="width:120px;" onchange="document.location.href = '?samples=true&type='+$(this).val()+'&data_set='+$('#allsets').val();">
 		<option value="">All</option>
-<?
+<?php
 foreach ($types as $type){
 	$selected = "";
 	if(isset($view->url["type"])){
@@ -94,7 +94,7 @@ foreach ($types as $type){
 			$selected = "selected";
 		}
 	}
-	?><option value="<?=$type?>" <?=$selected?>><?=$type?></option><?
+	?><option value="<?=$type?>" <?=$selected?>><?=$type?></option><?php
 }
 ?>
 </select>

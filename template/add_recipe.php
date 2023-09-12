@@ -1,4 +1,4 @@
-<?
+<?php
 $view->set_section('recipes');
 if(isset($view->url["id"])){
 $recipe = $view->get_recipe($view->url["id"]);
@@ -11,7 +11,7 @@ $recipe = $view->get_recipe($view->url["id"]);
 		</tr>
     </thead>
 
-<?
+<?php
 }else{
 ?>
 <table  class="table table-striped">
@@ -21,7 +21,7 @@ $recipe = $view->get_recipe($view->url["id"]);
 		</tr>
     </thead>
 
-<?
+<?php
 }
 ?>
     <tr>
@@ -39,13 +39,13 @@ $recipe = $view->get_recipe($view->url["id"]);
 		<td width="10%">Data Set</td>
 		<td>
 			<select id="data_set">
-				<? 
+				<?php 
 				$samples = $view->get_all_recipes();
 				$sets = array();
 				foreach($samples as $_sample){
 					if(!in_array(strtolower($_sample['data_set']), $sets)){
 						array_push($sets, strtolower($_sample['data_set']));
-						?><option <?php if(isset($recipe["data_set"])){ if($recipe["data_set"]==$_sample["data_set"]){ echo 'selected';}} ?> value="<?=$_sample["data_set"]?>"><?=$_sample["data_set"]?></option><?
+						?><option <?php if(isset($recipe["data_set"])){ if($recipe["data_set"]==$_sample["data_set"]){ echo 'selected';}} ?> value="<?=$_sample["data_set"]?>"><?=$_sample["data_set"]?></option><?php
 					}
 				}
 				?>
@@ -223,7 +223,7 @@ $recipe = $view->get_recipe($view->url["id"]);
     		$sample = $view->get_sample($part[1]);
         	?>
         	load_material('<?=$part[0];?>' , "<?=$sample["id"]?>:<?=$sample["type"]?> - <?=$sample["Unit"]?> - <?=$sample["Comments"]?>");
-        	<?
+        	<?php
         }
 		
 	}

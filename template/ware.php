@@ -323,7 +323,7 @@ list-style: none;
 <div style="width:20%;" class="pull-right">
 <table class="table table-striped" width="100%"><thead><tr><th>Folders</th></tr></thead><tr><td>
 	<ul class="catlist" style=" overflow:scroll">
-	<li><a href="javascript:view_ware_cat_contents(0)" id="cat_0" class="catz">Ware</a>	<?
+	<li><a href="javascript:view_ware_cat_contents(0)" id="cat_0" class="catz">Ware</a>	<?php
 	$html = "";
 	$view->get_ware_cat_html(0, $html);
 	echo $html;
@@ -341,7 +341,7 @@ list-style: none;
 			<div style="clear:both; text-align: center; border-radius:3px; background:#efefef; padding-top:10px; display:none;" id="cat_add" >
 			<select id="cat_sel" onchange="">
 			<option value="0" selected>/</option>
-			<?
+			<?php
 			$html = "";
 			$view->get_ware_cat_options(0, $html, "/");
 			echo $html;
@@ -376,7 +376,7 @@ list-style: none;
 				<div>
 					<select id="parent" name="parent" onchange="">
 					<option value="0" selected>/</option>
-					<?
+					<?php
 					$html = "";
 					$view->get_document_cat_options(0, $html, "/");
 					echo $html;
@@ -397,7 +397,7 @@ list-style: none;
 					<div style="width:20%;" class="pull-right">
 						<table class="table table-striped" width="100%"><thead><tr><th>Folders</th></tr></thead><tr><td>
 							<ul class="catlist" style=" overflow:scroll">
-							<li><a href="javascript:view_cat_contents(0)" id="cat_0" class="catz">Documents</a>	<?
+							<li><a href="javascript:view_cat_contents(0)" id="cat_0" class="catz">Documents</a>	<?php
 							$html = "";
 							$view->get_document_cat_html_lite(0, $html);
 							echo $html;
@@ -554,7 +554,7 @@ list-style: none;
 	<div>
 		<select id="parent" onchange="">
 			<option value="0" selected>/</option>
-			<?
+			<?php
 			$html = "";
 			$view->get_ware_cat_options(0, $html, "/");
 			echo $html;

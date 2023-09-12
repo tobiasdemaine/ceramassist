@@ -1,4 +1,4 @@
-<?
+<?php
 $view->set_section('firings');
 ?>
 <h4>Firing Schedule</h4>
@@ -206,7 +206,7 @@ $view->set_section('firings');
 			?>
 			console.log(pointz);
 			points = $.parseJSON(pointz); draw_points();
-			<?
+			<?php
 			
 		} ?>
 </script>

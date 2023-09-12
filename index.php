@@ -1065,36 +1065,36 @@ class ceramassist{
 		
 		
 		
-		$RO["K2O"] = $sample["K2O"] / $this->mw["K2O"];
-		$RO["Na2O"] = $sample["Na2O"] / $this->mw["Na2O"];
-		$RO["CaO"] = $sample["CaO"] / $this->mw["CaO"];
-		$RO["MnO"] = $sample["MnO"] / $this->mw["MnO"];
-		$RO["MgO"] = $sample["MgO"] / $this->mw["MgO"];
-		$RO["BaO"] = $sample["BaO"] / $this->mw["BaO"];
-		$RO["ZnO"] = $sample["ZnO"] / $this->mw["ZnO"];
-		$RO["PbO"] = $sample["PbO"] / $this->mw["PbO"];
-		$RO["Li2O"] = $sample["Li2O"] / $this->mw["Li2O"];
-		$RO["SrO"] = $sample["SrO"] / $this->mw["SrO"];
-		//$RO["FeO"] = $sample["FeO"] / $this->mw["FeO"];
-		//$RO["H2O"] = $sample["H2O"] / $this->mw["H2O"];
+		$RO["K2O"] = floatval($sample["K2O"]) / $this->mw["K2O"];
+		$RO["Na2O"] = floatval($sample["Na2O"]) / $this->mw["Na2O"];
+		$RO["CaO"] = floatval($sample["CaO"]) / $this->mw["CaO"];
+		$RO["MnO"] = floatval($sample["MnO"]) / $this->mw["MnO"];
+		$RO["MgO"] = floatval($sample["MgO"]) / $this->mw["MgO"];
+		$RO["BaO"] = floatval($sample["BaO"]) / $this->mw["BaO"];
+		$RO["ZnO"] = floatval($sample["ZnO"]) / $this->mw["ZnO"];
+		$RO["PbO"] = floatval($sample["PbO"]) / $this->mw["PbO"];
+		$RO["Li2O"] = floatval($sample["Li2O"]) / $this->mw["Li2O"];
+		$RO["SrO"] = floatval($sample["SrO"]) / $this->mw["SrO"];
+		//$RO["FeO"] = floatval($sample["FeO"]) / $this->mw["FeO"];
+		//$RO["H2O"] = floatval($sample["H2O"]) / $this->mw["H2O"];
 		
 		$R2O3 = array();
 		
-		$R2O3["Al2O3"] = $sample["Al2O3"] / $this->mw["Al2O3"];
-		//$R2O3["SO3"] = $sample["SO3"] / $this->mw["SO3"];
-		$R2O3["P2O5"] = $sample["P2O5"] / $this->mw["P2O5"];	
-		//$R2O3["Fe2O3T"] = $sample["Fe2O3T"] / $this->mw["Fe2O3T"];
-		$R2O3["B2O3"] = $sample["B2O3"] / $this->mw["B2O3"];
-		$R2O3["Fe2O3"] = ($sample["FeO"] + $sample["Fe2O3"]) / $this->mw["Fe2O3"];
+		$R2O3["Al2O3"] = floatval($sample["Al2O3"]) / $this->mw["Al2O3"];
+		//$R2O3["SO3"] = floatval($sample["SO3"] / $this->mw["SO3"];
+		$R2O3["P2O5"] = floatval($sample["P2O5"]) / $this->mw["P2O5"];	
+		//$R2O3["Fe2O3T"] = floatval($sample["Fe2O3T"] / $this->mw["Fe2O3T"];
+		$R2O3["B2O3"] = floatval($sample["B2O3"]) / $this->mw["B2O3"];
+		$R2O3["Fe2O3"] = (floatval($sample["FeO"]) + floatval($sample["Fe2O3"])) / $this->mw["Fe2O3"];
 		
 
 		
 		$RO2 = array();
 		
-		$RO2["SiO2"] = $sample["SiO2"] / $this->mw["SiO2"];
-		$RO2["TiO2"] = $sample["TiO2"] / $this->mw["TiO2"];
-		$RO2["ZrO2"] = $sample["ZrO2"] / $this->mw["ZrO2"];
-		//$RO2["CO2"] = $sample["CO2"] / $this->mw["CO2"];
+		$RO2["SiO2"] = floatval($sample["SiO2"]) / $this->mw["SiO2"];
+		$RO2["TiO2"] = floatval($sample["TiO2"]) / $this->mw["TiO2"];
+		$RO2["ZrO2"] = floatval($sample["ZrO2"]) / $this->mw["ZrO2"];
+		//$RO2["CO2"] = floatval($sample["CO2"] / $this->mw["CO2"];
 	
 		$RO_unity = 0;
 		foreach($RO as $key => $value){

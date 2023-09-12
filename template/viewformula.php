@@ -16,7 +16,13 @@ $view->set_section('formula');
 	</ul>
 	<div id="tabs-1">
 
-<p>Silica / Alumina ratio : <strong><?=round(($sample['SiO2']/$sample['Al2O3']), 4)?></strong></p>
+<p>Silica / Alumina ratio : <strong><?php
+if( floatval($sample['SiO2']) === 0 || floatval($sample['Al2O3']===0)) {
+	echo round(floatval($sample['SiO2']) / floatval($sample['Al2O3']), 4);
+}else{
+	echo 0;
+}
+ ?></strong></p>
 <table align=center>
 	<tr>
 		<td>
